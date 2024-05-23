@@ -2,6 +2,7 @@ const Board = ({ task, index, taskList, setTaskList }) => {
   const handleDelete = () => {
     let removeIndex = taskList.indexOf(task);
     taskList.splice(removeIndex, 1);
+    console.log(removeIndex);
     setTaskList([
       (currentTasks) => currentTasks.filter((todo) => index === removeIndex),
     ]);
